@@ -1,0 +1,138 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#8B0000">
+
+
+
+    <!-- ImageView -->
+    <ImageView
+        android:id="@+id/courseImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/photo"
+        android:scaleType="fitCenter" />
+
+    <!-- Course Selection using CheckBox -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To the Course Registration!"
+        android:textSize="20sp"
+        android:textColor="#FFC0CB"
+        android:padding="10dp"/>
+
+    <CheckBox
+        android:id="@+id/courseJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:textSize="20dp"/>
+
+    <CheckBox
+        android:id="@+id/coursePython"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Python"
+        android:textSize="20dp"/>
+
+    <CheckBox
+        android:id="@+id/courseKotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotlin"
+        android:textSize="20dp"/>
+
+    <!-- Course Type Selection using RadioButton -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Course Type:"
+        android:textSize="20dp"
+        android:textColor="#FFC0CB"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/fullTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full-Time"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="#FFC0CB"/>
+
+        <RadioButton
+            android:id="@+id/partTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part-Time"
+            android:textColor="#ffc0cb"/>
+    </RadioGroup>
+
+    <!-- Course Duration using SeekBar -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Course Duration (Weeks):"
+        android:textColor="#FFC0CB"/>
+
+    <SeekBar
+        android:id="@+id/courseDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="12" />
+
+    <!-- RatingBar for Course Rating -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+
+        android:text="Rate the Course:"
+        android:textColor="#FFC0CB"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
+    <!-- Switch for Enabling Notifications -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Notifications:"
+        android:textColor="#FFC0CB"/>
+
+    <Switch
+        android:id="@+id/switchNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textColor="#FFC0CB"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Registration"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <!-- TextView to Display Selections -->
+    <TextView
+        android:id="@+id/displaySelections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Selections:"
+        android:visibility="gone"
+        android:textSize="18sp" />
+</LinearLayout>
